@@ -1,0 +1,92 @@
+header{
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+}
+
+section{
+    border-bottom: 2px solid white;
+    padding-top: 20px;
+}
+
+.menu-container{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 20px;
+}
+
+.menu-items{
+    /* border:2px solid blue; */
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img{
+    width:100%;
+    height:auto;
+    border-radius: 10px;
+}
+
+.image{
+    display: flex;
+    justify-content: stretch;
+}
+
+footer{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    margin:20px 0;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color:white;
+}
+
+.heading{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    padding:10px 0;
+    align-items: center;
+}
+
+.price{
+    padding: 10px 0;
+}
+
+.id{
+    text-align: center;
+    background-color: blue;
+    width:20px; height:20px;
+    padding:10px;
+    border-radius: 30px;
+}
+
+@media (max-width: 1000px) and (min-width: 800px){
+    .menu-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 800px) and (min-width: 600px){
+    .menu-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) and (min-width: 400px){
+    .menu-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px){
+    .menu-container{
+        grid-template-columns: auto;
+    }
+}
